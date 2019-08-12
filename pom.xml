@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.coriant.dcn-manager</groupId>
+        <artifactId>client</artifactId>
+		<version>5.1.232-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+
+    <groupId>com.coriant.dcn-manager.client</groupId>
+    <artifactId>bicnet-plugin</artifactId>
+    <name>DCN Manager Client: Bicnet Plugin</name>
+    <packaging>pom</packaging>
+
+    <properties>
+        <tempus-fugit-version>1.1</tempus-fugit-version>
+    </properties>
+
+    <modules>
+        <module>api</module>
+        <module>core</module>
+        <module>presentation</module>
+        <module>repository</module>
+        <module>service</module>
+        <module>import-export</module>
+    </modules>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.coriant.bicnet.bcb</groupId>
+			<artifactId>bcb-client</artifactId>			
+		</dependency>
+	</dependencies>
+</project>
