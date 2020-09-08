@@ -1,0 +1,8 @@
+**/*.class
+.idea
+.settings
+.project
+.classpath
+target
+batch.iml
+.DS_STORE
